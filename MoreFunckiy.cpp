@@ -1,0 +1,45 @@
+#include<iostream>
+#include"Middle.h"
+using namespace std;
+
+ int itc_min_num(long a) //Number 6
+ {
+     int g, h;
+     g = 10;
+    while (a>0)
+    {
+        h=a%10;
+        if (h<g)
+        {
+        g = h;
+        }
+        a = a / 10;
+    }
+    return g;
+ }
+int itc_rev_num(long a) //Number 7
+{
+    int g, rc;
+    rc = 0;
+    while (a>0)
+    {
+        g = a % 10;
+        rc = rc * 10 + g;
+        a = a / 10;
+    }
+    return rc;
+}
+ int itc_null_count(long a) //Number 8
+ {
+     int g, h;
+     h = 0;
+     while (a>0)
+        g = a % 10;
+     if (g==0)
+     {
+         h = h + 1;
+     }
+     g = g * 0;
+     a = a / 10;
+     return h;
+ }
