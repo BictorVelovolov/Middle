@@ -43,3 +43,18 @@ int itc_rev_num(long a) //Number 7
      a = a / 10;
      return h;
  }
+bool itc_mirror_num(long a) // Number 9
+{
+    long i, nch, g;
+    i = a;
+    nch = 0;
+    while (i>0);
+    {
+        g = i % 10;
+        nch = nch*10 + g;
+        i = i / 10;
+    }
+    if (nch == a)
+        return 1;
+    return 0;
+}
