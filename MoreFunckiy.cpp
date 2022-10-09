@@ -29,26 +29,26 @@ int itc_rev_num(long a) //Number 7
     }
     return rc;
 }
- int itc_null_count(long a) //Number 8
+int itc_null_count(long a) //Number 8
  {
      int g, h;
      h = 0;
-     while (a>0)
+     while (a != 0)
+     {
         g = a % 10;
      if (g==0)
-     {
          h = h + 1;
-     }
      g = g * 0;
      a = a / 10;
+     }
      return h;
  }
-bool itc_mirror_num(long a) // Number 9
+ bool itc_mirror_num(long a) // Number 9
 {
     long i, nch, g;
     i = a;
     nch = 0;
-    while (i>0);
+    while (i != 0)
     {
         g = i % 10;
         nch = nch*10 + g;
