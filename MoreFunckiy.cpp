@@ -58,3 +58,20 @@ int itc_null_count(long a) //Number 8
         return 1;
     return 0;
 }
+
+long itc_bin_num(long a) //Number 13
+{
+    int nch, d, i, g;
+    nch = 0;
+    i = 1;
+    while (a > 0)
+    {
+        d = a % 2;
+        nch = nch * 10 + d;
+        a = a / 2;
+        if (nch == 0)
+            i = i * 10;
+    }
+    g = nch * i;
+    return g;
+}
