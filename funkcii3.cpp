@@ -2,7 +2,7 @@
 #include"middle.h"
 using namespace std;
 
-int itc_second_max_num(long a) //Number 11
+int itc_second_max_num(long long a) //Number 11
 {
     int d, h, g;
     h = 0;
@@ -43,7 +43,7 @@ int itc_second_max_num(long a) //Number 11
     return -1;
 }
 
- int itc_second_simple_max_num(long a)//Number 12
+ int itc_second_simple_max_num(long long a)//Number 12
  {
      int d, h, g, i;
     h = 0;
@@ -91,7 +91,7 @@ int itc_second_max_num(long a) //Number 11
     return -1;
  }
 
-long itc_bin_num(long a) //Number 13
+long long itc_bin_num(long long a) //Number 13
 {
     int nch, d, i, g;
     nch = 0;
@@ -121,7 +121,7 @@ long itc_bin_num(long a) //Number 13
     g = nch * i;
     return g;
 }
-long itc_oct_num(long a) //Number 14
+long long itc_oct_num(long long a) //Number 14
 {
     int nch, d, g, i;
     nch = 0;
@@ -162,7 +162,7 @@ long itc_oct_num(long a) //Number 14
     return i;
 }
 
-int itc_rev_bin_num(long a) //Number 15
+int itc_rev_bin_num(long long a) //Number 15
 {
     int d, i, nch;
     i = 1;
