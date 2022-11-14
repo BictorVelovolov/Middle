@@ -2,7 +2,7 @@
 #include"middle.h"
 using namespace std;
 
-int itc_rev_oct_num(long a) // Number 16
+int itc_rev_oct_num(long long a) // Number 16
 {
     int b, f, e;
     b = 1;
