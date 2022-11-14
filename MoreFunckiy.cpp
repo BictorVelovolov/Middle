@@ -112,7 +112,7 @@ int itc_rev_num(long a) //Number 7
             i = i / 10;
         }
     }
-    if (nch == a)
+    if (nch == a * (-1))
         return 1;
     return 0;
 }
