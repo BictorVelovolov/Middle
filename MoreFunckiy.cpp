@@ -64,6 +64,8 @@ int itc_rev_num(long long a) //Number 7
 }
  int itc_null_count(long long a) //Number 8
  {
+     if (a == 0)
+        return 1;
      int g, h;
      h = 0;
      if (a > 0)
@@ -108,6 +110,8 @@ int itc_rev_num(long long a) //Number 7
  bool itc_mirror_num(long long a) // Number 9
 {
     long long i, nch, g;
+    if (a == 0)
+        return 0;
     i = a;
     nch = perevorot(a);
     if (nch == a * (-1) || nch == a)
@@ -130,7 +134,7 @@ int itc_rev_num(long long a) //Number 7
          a = a * (-1);
          for (i = 1; i < a; i++)
         {
-            if (itc_mirror_num(i) == 1)
+            if (itc_mirror_num(i))
                 b = b + 1;
         }
      }
