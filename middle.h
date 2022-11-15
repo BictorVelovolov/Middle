@@ -18,4 +18,7 @@ long long itc_oct_num(long long a);
 int itc_rev_bin_num(long long a);
 int itc_rev_oct_num(long long a);
 
+long long perevorot(long long i);
+
 #endif // MIDDLE_H_INCLUDED
+
