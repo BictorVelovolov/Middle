@@ -11,7 +11,6 @@ int itc_len_num(long a) //Number 2
 {
     int g;
     g = 0;
-    if (a == 0)
         return 0;
     if (a < 0)
         a = a * (-1);
