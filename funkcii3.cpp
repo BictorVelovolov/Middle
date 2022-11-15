@@ -1,14 +1,11 @@
-#include<iostream>
-#include"middle.h"
-using namespace std;
-
 int itc_second_max_num(long long a) //Number 11
 {
     int d, h, g;
     h = 0;
     if (a / 10 != 0)
     {
-        if (a > 0)
+        if (a < 0)
+            a = a * (-1);
         {
             g = itc_max_num(a);
             while (a > 0)
@@ -21,24 +18,11 @@ int itc_second_max_num(long long a) //Number 11
                 }
                 a = a / 10;
             }
-        }
-        else
-        {
-            a = a * (-1);
-            g = itc_max_num(a);
-            while (a > 0)
-        {
-            d = a % 10;
-            if (g > d)
-            {
-                if (d > h)
-                    h = d;
-            }
-            a = a / 10;
-        }
-        }
+            if (h == g)
+                return -1;
         return h;
 
+    }
     }
     return -1;
 }
