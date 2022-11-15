@@ -13,40 +13,20 @@ int itc_len_num(long a) //Number 2
     g = 0;
     if (a == 0)
         return 0;
-    if (a > 0)
-    {
+    if (a < 0)
+        a = a * (-1);
         while (a>0)
         {
             g = g + 1;
             a = a / 10;
         }
-    }
-    else
-    {
-        a = a * (-1);
-        while (a > 0)
-        {
-            g = g + 1;
-            a = a / 10;
-        }
-    }
     return g;
 }
 int itc_sum_num(long long a) //Number 3
 {
     int g, sc;
     sc = 0;
-    if (a > 0)
-    {
-        while (a>0)
-        {
-            g = a % 10;
-            sc = sc + g;
-            a = a / 10;
-        }
-    }
-    else
-    {
+    if (a < 0)
         a = a * (-1);
         while (a>0)
         {
@@ -54,7 +34,6 @@ int itc_sum_num(long long a) //Number 3
             sc = sc + g;
             a = a / 10;
         }
-    }
     return sc;
 }
 
@@ -62,43 +41,21 @@ long long itc_multi_num(long long a) //Number 4
 {
     int g, pc;
     pc = 1;
-    if (a > 0)
-    {
-        while (a>0)
-        {
-            g = a % 10;
-            pc = pc * g;
-            a = a / 10;
-        }
-    }
-    else
-    {
+    if (a < 0)
         a = a * (-1);
-        while (a>0)
+        while (a > 0)
         {
             g = a % 10;
             pc = pc * g;
             a = a / 10;
         }
-    }
     return pc;
 }
 int itc_max_num(long long a) //Number 5
 {
     int g, h;
-    g=0;
-    if (a > 0)
-    {
-        while (a>0)
-        {
-            h=a%10;
-            if (h>g)
-            g = h;
-            a = a / 10;
-        }
-    }
-    else
-    {
+    g = 0;
+    if (a < 0)
         a = a * (-1);
         while (a>0)
         {
@@ -107,6 +64,5 @@ int itc_max_num(long long a) //Number 5
             g = h;
             a = a / 10;
         }
-    }
     return g;
 }
