@@ -11,7 +11,8 @@ int itc_len_num(long a) //Number 2
 {
     int g;
     g = 0;
-        return 0;
+     if (a == 0)
+        return 1;
     if (a < 0)
         a = a * (-1);
         while (a>0)
@@ -40,6 +41,8 @@ long long itc_multi_num(long long a) //Number 4
 {
     int g, pc;
     pc = 1;
+    if (a == 0)
+         return 0;
     if (a < 0)
         a = a * (-1);
         while (a > 0)
