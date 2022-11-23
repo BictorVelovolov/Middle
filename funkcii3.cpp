@@ -66,7 +66,7 @@ int itc_second_max_num(long long a) //Number 11
 
 long long itc_bin_num(long long a) //Number 13
 {
-    int nch, d, i, g;
+    long long nch, d, i, g;
     nch = 0;
     i = 1;
     if (a < 0)
@@ -84,7 +84,7 @@ long long itc_bin_num(long long a) //Number 13
 }
 long long itc_oct_num(long long a) //Number 14
 {
-    int nch, d, g, i;
+    long long nch, d, g, i;
     nch = 0;
     i = 1;
     if (a < 0)
