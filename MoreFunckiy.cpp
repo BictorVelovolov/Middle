@@ -1,15 +1,12 @@
-#include<iostream>
-#include"middle.h"
-using namespace std;
-
 long long perevorot(long long i){
-     int g, nch;
+     long long g, nch;
+     nch = 0;
      if (i < 0)
         i = i * (-1);
-      while (i != 0)
+      while (i > 0)
         {
             g = i % 10;
-            nch = nch*10 + g;
+            nch = nch * 10 + g;
             i = i / 10;
         }
      return nch;
@@ -73,23 +70,27 @@ int itc_rev_num(long long a) //Number 7
 
  bool itc_mirror_num(long long a) // Number 9
 {
+    if (a >= 0)
+    {
     long long nch, g;
     nch = perevorot(a);
     if (nch == a * (-1) || nch == a)
         return 1;
+    }
     return 0;
 }
  int itc_mirror_count(long long a) //Number 10
  {
      int b, i;
      b = 0;
-     if (a < 0)
-     a = a * (-1);
-        for (i = 1; i < a; i++)
+    if(a < 0)
+        a = a * (-1);
+     i = 1;
+        while (i < a)
         {
             if (itc_mirror_num(i))
                 b = b + 1;
+            i = i + 1;
         }
-
-     return b;
+        return b;
 }
