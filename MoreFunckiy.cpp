@@ -90,7 +90,7 @@ int itc_rev_num(long long a) //Number 7
     if(a > 0)
         {
      i = 1;
-        while (i < a)
+        while (i <= a)
         {
             if (itc_mirror_num(i))
                 b = b + 1;
