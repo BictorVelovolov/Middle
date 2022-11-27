@@ -1,3 +1,7 @@
+#include<iostream>
+#include"middle.h"
+using namespace std;
+
 long long perevorot(long long i){
      long long g, nch;
      nch = 0;
