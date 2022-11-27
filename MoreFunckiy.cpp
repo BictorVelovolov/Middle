@@ -87,8 +87,8 @@ int itc_rev_num(long long a) //Number 7
  {
      int b, i;
      b = 0;
-    if(a < 0)
-        a = a * (-1);
+    if(a > 0)
+        {
      i = 1;
         while (i < a)
         {
@@ -96,5 +96,7 @@ int itc_rev_num(long long a) //Number 7
                 b = b + 1;
             i = i + 1;
         }
+        }
         return b;
+
 }
