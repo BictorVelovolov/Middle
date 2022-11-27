@@ -1,8 +1,8 @@
 #ifndef MIDDLE_H_INCLUDED
 #define MIDDLE_H_INCLUDED
 
-void itc_num_print(int a); //Печатает число
-int itc_len_num(long a); //Печатает количество разрядов в числе
+void itc_num_print(long a); //Печатает число
+int itc_len_num(long long a); //Печатает количество разрядов в числе
 int itc_sum_num(long long a); //Печатает сумму цифр числа
 int itc_max_num(long long a); //Макс. цифра в числе
 long long itc_multi_num(long long a); //Произведение цифр в числе
@@ -21,4 +21,3 @@ int itc_rev_oct_num(long long a);
 long long perevorot(long long i);
 
 #endif // MIDDLE_H_INCLUDED
-
