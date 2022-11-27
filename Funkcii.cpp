@@ -12,7 +12,7 @@ int itc_len_num(long long a) //Number 2
     int g;
     g = 0;
     if (a == 0)
-        return 0;
+        return 1;
     if (a < 0)
         a = a * (-1);
         while (a>0)
