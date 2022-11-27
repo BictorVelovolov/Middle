@@ -2,12 +2,12 @@
 #include"middle.h"
 using namespace std;
 
-void itc_num_print(int a) //Number 1
+void itc_num_print(long a) //Number 1
 {
     cout << a;
 }
 
-int itc_len_num(long a) //Number 2
+int itc_len_num(long long a) //Number 2
 {
     int g;
     g = 0;
