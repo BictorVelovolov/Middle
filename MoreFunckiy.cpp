@@ -40,11 +40,11 @@ int itc_rev_num(long long a) //Number 7
     int g, rc, l;
     rc = 0;
     l = a;
-    if(a==-2147483648 || a == 2147483647){
+    if(a == -2147483648 || a == 2147483647){
         return 10;
     }
     if (a == 0)
-        return 0;
+        return 1;
     if (a < 0)
     a = a * (-1);
         while (a > 0)
