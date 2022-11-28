@@ -48,7 +48,6 @@ int itc_rev_num(long long a) //Number 7
             rc = rc * 10 + g;
             a = a / 10;
         }
-        rc = perevorot (rc);
         if (l < 0)
             rc = rc * (-1);
         return itc_len_num(rc);
