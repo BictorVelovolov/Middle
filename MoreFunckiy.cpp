@@ -40,6 +40,9 @@ int itc_rev_num(long long a) //Number 7
     int g, rc, l;
     rc = 0;
     l = a;
+    if(a==-2147483648 || 2147483647){
+        return 10;
+    }
     if (a == 0)
         return 0;
     if (a < 0)
@@ -54,7 +57,6 @@ int itc_rev_num(long long a) //Number 7
             rc = rc * (-1);
         return itc_len_num(rc);
 }
-
  int itc_null_count(long long a) //Number 8
  {
      if (a == 0)
