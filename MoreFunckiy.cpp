@@ -51,7 +51,7 @@ int itc_rev_num(long long a) //Number 7
         rc = perevorot (rc);
         if (l < 0)
             rc = rc * (-1);
-        return rc;
+        return itc_len_num(rc);
 }
  int itc_null_count(long long a) //Number 8
  {
